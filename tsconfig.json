@@ -1,0 +1,32 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "useUnknownInCatchVariables": false,
+        "alwaysStrict": true,
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "target": "es2021",
+        "lib": [
+            "es2021"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noEmitHelpers": true,
+        "importHelpers": true,
+        "outDir": "dist",
+        "removeComments": true,
+        "rootDir": ".",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+        "declarationMap": true,
+        "strictPropertyInitialization": false
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
