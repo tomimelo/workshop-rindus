@@ -2,6 +2,7 @@
     "compileOnSave": false,
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
+        "allowImportingTsExtensions": true,
         "useUnknownInCatchVariables": false,
         "alwaysStrict": true,
         "declaration": true,
@@ -23,6 +24,7 @@
         "sourceMap": true,
         "strict": true,
         "declarationMap": true,
+        "noEmit": true,
         "strictPropertyInitialization": false
     },
     "exclude": [

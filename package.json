@@ -4,7 +4,8 @@
   "main": "base/main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --experimental-strip-types ."
+    "start": "node --experimental-strip-types .",
+    "start:di": "node --experimental-strip-types di/main.ts"
   },
   "keywords": [],
   "author": "",
