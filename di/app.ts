@@ -1,3 +1,5 @@
+import {CampaignsService} from './services/campaigns.service';
+
 export interface Class<T> {
   new (...args: unknown[]): T;
 }
@@ -16,4 +18,12 @@ export interface Container {
 
 export function inject<T>(token: ProviderToken<T>): T {
   throw new Error('Not implemented');
+}
+
+async function main(): Promise<void> {
+  const container: Container = {} as Container;
+  container.configure([]);
+  const campaignsService = container.get(CampaignsService);
+  const campaign = await campaignsService.getById('campaign-id');
+  console.log({campaign});
 }
