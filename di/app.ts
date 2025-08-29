@@ -1,4 +1,4 @@
-import {CampaignsService} from './services/campaigns.service';
+import {StaticCampaignsService} from './services/campaign/static-campaigns.service.ts';
 
 export interface Class<T> {
   new (...args: unknown[]): T;
@@ -16,14 +16,12 @@ export interface Container {
   get<T>(token: ProviderToken<T>): T;
 }
 
-export function inject<T>(token: ProviderToken<T>): T {
-  throw new Error('Not implemented');
+async function main(): Promise<void> {
+  // const container: Container = {} as Container;
+  // container.configure([]);
+  const campaignsService = new StaticCampaignsService();
+  const campaign = await campaignsService.getById('campaign-id');
+  console.dir(campaign, {depth: null});
 }
 
-async function main(): Promise<void> {
-  const container: Container = {} as Container;
-  container.configure([]);
-  const campaignsService = container.get(CampaignsService);
-  const campaign = await campaignsService.getById('campaign-id');
-  console.log({campaign});
-}
+main();
