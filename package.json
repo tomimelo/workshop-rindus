@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "base/main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --experimental-strip-types .",
-    "start:di": "node --experimental-strip-types di/main.ts"
+    "test": "",
+    "test:di": "node --experimental-strip-types --experimental-transform-types --test di/**/*.test.ts",
+    "start": "node --experimental-strip-types --experimental-transform-types .",
+    "start:di": "node --experimental-strip-types --experimental-transform-types di/main.ts"
   },
   "keywords": [],
   "author": "",
