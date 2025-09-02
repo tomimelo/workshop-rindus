@@ -1,6 +1,6 @@
 import {describe, it} from 'node:test';
 import assert from 'node:assert';
-import {fromPromise, Observable, of} from './observable.ts';
+import {fromPromise, map, Observable, of} from './observable.ts';
 
 describe(Observable.name, () => {
   it('teardown logic', async () => {
@@ -63,6 +63,11 @@ describe(Observable.name, () => {
   it('fromPromise', async () => {
     const source = fromPromise(Promise.resolve('some-value'));
     assert.deepStrictEqual(await consumeSource(source), ['some-value']);
+  });
+
+  it('map operator', async () => {
+    const source = of(1, 2, 3).pipe(map((value) => value * 2));
+    assert.deepStrictEqual(await consumeSource(source), [2, 4, 6]);
   });
 
   async function consumeSource<T>(source: Observable<T>): Promise<ReadonlyArray<T>> {

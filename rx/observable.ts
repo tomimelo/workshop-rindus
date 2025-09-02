@@ -10,8 +10,17 @@ export interface Subscription {
   unsubscribe(): void;
 }
 
+export type OperatorFunction<T, R> = (source: Observable<T>) => Observable<R>;
+
 export class Observable<T> {
   public constructor(private readonly subscriber: (observer: Observer<T>) => TeardownLogic | void) {}
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public pipe<R>(...operators: ReadonlyArray<OperatorFunction<any, any>>): Observable<R> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return operators.reduce((acc, operator) => operator(acc), this as Observable<any>) as Observable<R>;
+  }
+
   public subscribe(observer: Partial<Observer<T>>): Subscription {
     let teardownLogic: TeardownLogic | void;
     let closed = false;
@@ -72,4 +81,17 @@ export function fromPromise<T>(promise: Promise<T>): Observable<T> {
         observer.error(err);
       });
   });
+}
+
+export function map<T, R>(transformer: (value: T) => R): OperatorFunction<T, R> {
+  return (source) => {
+    return new Observable((observer) => {
+      const subscription = source.subscribe({
+        ...observer,
+        next: (value) => observer.next(transformer(value)),
+      });
+
+      return () => subscription.unsubscribe();
+    });
+  };
 }
