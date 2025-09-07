@@ -8,7 +8,8 @@
     "test:rx": "node --experimental-strip-types --test rx/**/*.test.ts",
     "start": "node --experimental-strip-types .",
     "start:di": "node --experimental-strip-types di/main.ts",
-    "start:rx": "node --experimental-strip-types rx/main.ts"
+    "start:rx": "node --experimental-strip-types rx/main.ts",
+    "start:slides": "slidev slides/slides.md"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
     "typescript-eslint": "^8.41.0"
   },
   "dependencies": {
+    "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0"
   }
 }
