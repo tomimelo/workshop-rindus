@@ -260,3 +260,17 @@ class: 'v-center'
   <li v-click="5">Ser responsables</li>
   <li v-click="6">Ser más competentes</li>
 </ul>
+
+---
+class: 'v-center'
+---
+
+### Bibliografía:
+- [The Impact of Generative AI on Critical Thinking - Microsoft](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf) 
+- [The Danger of Relying Too Much on AI - Maximilian Schwarzmueller](https://maximilian-schwarzmueller.com/articles/the-danger-of-relying-too-much-on-ai/) 
+- [Why Copy-Pasting Code Isn’t Teaching You Programming - AlgoCademy](https://algocademy.com/blog/why-copy-pasting-code-isnt-teaching-you-programming/) 
+- [I Lost a Coding Interview Because I Forgot How to Code Without AI - Luke Skyward](https://medium.com/@datasciencedisciple/i-lost-a-coding-interview-because-i-forgot-how-to-code-without-ai-e23536d899b2) 
+- [Why I stopped using AI code editors - Luciano Nooijen](https://lucianonooijen.com/blog/why-i-stopped-using-ai-code-editors/) 
+- [Code Mending in the AI age - Ray Myers](https://www.youtube.com/watch?v=-r1yB6wCRP8) 
+- [The Zen of Programming - Sander Hoogendoorn](https://www.youtube.com/watch?v=syGnlE_oosM) 
+- [Developer Productivity v2 - ThePrimeagen](https://www.youtube.com/watch?v=03KsS09YS4E) 
