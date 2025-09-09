@@ -127,8 +127,8 @@ class: 'v-center'
 <ul class="list">
   <li>Practicar los básicos</li>
   <li v-click="1">Entrenar la "memoria muscular"</li>
-  <li v-click="2">Conocer nuestras herramientas</li>
-  <li v-click="3">Desarrollar la intuición</li>
+  <li v-click="2">Desarrollar la intuición</li>
+  <li v-click="3">Conocer nuestras herramientas</li>
 </ul>
 
 ---
