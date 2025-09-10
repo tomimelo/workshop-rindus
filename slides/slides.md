@@ -90,12 +90,6 @@ class: 'center col'
 </div>
 
 ---
-class: 'center'
----
-
-# Fast food code
-
----
 
 <p>Al copiar y pegar nos salteamos la parte más importante y valiosa del proceso.</p>
 <p>❓ → 🍔 → ⌨️  → ✅</p>
