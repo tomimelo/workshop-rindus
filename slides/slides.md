@@ -247,7 +247,7 @@ class: 'v-center'
 ### Software craftmanship
 
 <ul class="list">
-  <li v-click="1">No se trata de paser de rojo a verde</li>
+  <li v-click="1">No se trata de pasar de rojo a verde</li>
   <li v-click="2">Conocimento profundo sobre lo que estamos haciendo</li>
   <li v-click="3">Calidad, armonía</li>
   <li v-click="4">Disfrutar de lo que hacemos</li>
