@@ -4,10 +4,10 @@
   "main": "base/main.ts",
   "scripts": {
     "test": "",
-    "test:di": "node --experimental-strip-types --test di/**/*.test.ts",
+    "test:di": "node --experimental-strip-types --experimental-transform-types --test di/**/*.test.ts",
     "test:rx": "node --experimental-strip-types --test rx/**/*.test.ts",
     "start": "node --experimental-strip-types .",
-    "start:di": "node --experimental-strip-types di/main.ts",
+    "start:di": "node --experimental-strip-types --experimental-transform-types di/main.ts",
     "start:rx": "node --experimental-strip-types rx/main.ts",
     "start:slides": "slidev slides/slides.md"
   },
