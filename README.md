@@ -13,7 +13,7 @@ Reflexionar sobre la importancia del **deep knowledge** y la **autosuficiencia**
 
 ---
 
-## 🧩 Contenidos del taller
+## 🧩 Contenidos del workshop
 
 - **Bloque 1 — Mentalidad (“Cultivar la intuición”)**
   - Aprender por repetición y práctica (Shu–Ha–Ri).
@@ -33,22 +33,23 @@ Reflexionar sobre la importancia del **deep knowledge** y la **autosuficiencia**
 
 ## 📂 Contenido importante en el repositorio
 
-/ (raíz)
-├─ di/ # Código del DI (implementación del workshop)
-├─ slides/
-│ └─ slides.md # Slides del taller (Slidev)
-├─ summary.md # Speech completo (versión de lectura)
+/ (raíz)<br>
+├─ [di](di/)/ # Código del DI (implementación del workshop)<br>
+├─ slides/<br>
+│ └─ [slides.md](slides/slides.md) # Slides del taller (Slidev)<br>
+├─ [summary.md](summary.md) # Speech completo (versión de lectura)<br>
 └─ README.md
 
 > ℹ️ La rama principal `master` contiene el estado final del DI creado durante el workshop.
+
 > ℹ️ La rama `di-test` contiene una implementacion del DI hecha por mi.
+
 > ℹ️ La rama `rx-test` contiene una implementacion de un Observable hecha por mi.
 
 ---
 
 ## ▶️ Cómo ejecutar
 
-### Ver las slides (Slidev)
 Requisitos: Node 18+
 
 ```bash
