@@ -6,6 +6,8 @@ export interface Campaign {
   targetings: ReadonlyArray<Targeting>;
 }
 
+export const CAMPAIGNS_SERVICE = 'CampaignsServiceInjectionToken';
+
 export interface CampaignsService {
   getById(id: string): Promise<Campaign>;
 }
