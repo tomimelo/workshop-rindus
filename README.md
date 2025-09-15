@@ -35,6 +35,7 @@ Reflexionar sobre la importancia del **deep knowledge** y la **autosuficiencia**
 
 / (raíz)<br>
 ├─ [di](di/)/ # Código del DI (implementación del workshop)<br>
+├─ [rx](rx/)/ # Código base para implementar un Observable desde 0. No se llegó a realizar durante el workshop (puedes intentarlo 👀)<br>
 ├─ slides/<br>
 │ └─ [slides.md](slides/slides.md) # Slides del taller (Slidev)<br>
 ├─ [summary.md](summary.md) # Speech completo (versión de lectura)<br>
